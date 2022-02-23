@@ -25,7 +25,7 @@ body {
   margin: 2rem 0 0 2rem;
   background-color: #ffffff;
   width: 15rem;
-  height: 18rem;
+  height: 19rem;
   border-radius: 5px;
 }
 .card img {
@@ -47,7 +47,7 @@ body {
 }
 .card .card-interface .buy-button {
   background-color: #f0edff;
-  margin: 1rem 1rem 0 0;
+  margin: 1.5rem 1.5rem 0 0;
   background-image: url("/img/cart.png");
   background-position: 50% 50%;
   background-size: 1.6rem;

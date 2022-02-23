@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/CSS/style.css"x
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
     <div class="card">

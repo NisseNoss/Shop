@@ -21,18 +21,23 @@ body {
   background-color: #654aff;
 }
 
+#cardsec {
+  display: flex;
+  flex-direction: row;
+}
+
 .card {
   margin: 2rem 0 0 2rem;
   background-color: #ffffff;
-  width: 15rem;
-  height: 19rem;
+  width: 16rem;
+  height: 20rem;
   border-radius: 5px;
 }
 .card img {
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 1.5rem;
   width: 13rem;
   height: 13rem;
-  border: 1px solid black;
+  object-fit: cover;
   border-radius: 5px;
 }
 .card .card-interface {
@@ -44,16 +49,17 @@ body {
   margin: 0.5rem 0 0 1rem;
   display: flex;
   flex-direction: column;
+  max-width: fit-content;
 }
 .card .card-interface .buy-button {
   background-color: #f0edff;
-  margin: 1.5rem 1.5rem 0 0;
+  margin: 1.5rem 1rem 0 0;
   background-image: url("/img/cart.png");
   background-position: 50% 50%;
-  background-size: 1.6rem;
+  background-size: 2rem;
   background-repeat: no-repeat;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 6px;
   cursor: pointer;
 }

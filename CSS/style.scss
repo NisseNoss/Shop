@@ -2,6 +2,7 @@ $backgroundcolor: #654aff;
 $textcolor: #524b77;
 $iconcolor: #f0edff;
 $white: #ffffff;
+$textcolorlight: #8e39ff;
 
 .headercolor{color: $backgroundcolor;}
 .color {color: $textcolor;}
@@ -19,6 +20,47 @@ $white: #ffffff;
 
 body {
   background-color: $backgroundcolor;
+}
+
+header
+{
+ background-color: white;
+}
+
+#header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //border-bottom: 1px solid black;
+  width: 85%;
+  margin: auto;
+
+}
+//hello
+#menu
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .menu-btn
+  {
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    padding: 1.5em 1em 1.5em 1em;
+    //margin: 10px 0 0 0;
+    display: block;
+    color: $textcolor;
+    font-weight: bold;
+    transition: .2s;
+
+    &:hover
+    {
+      color: $textcolorlight;
+    }
+  }
 }
 
 #cardsec

@@ -21,6 +21,37 @@ body {
   background-color: #654aff;
 }
 
+header {
+  background-color: white;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#menu .menu-btn {
+  width: 100%;
+  max-width: 150px;
+  text-align: center;
+  padding: 1.5em 1em 1.5em 1em;
+  display: block;
+  color: #524b77;
+  font-weight: bold;
+  transition: 0.2s;
+}
+#menu .menu-btn:hover {
+  color: #8e39ff;
+}
+
 #cardsec {
   display: flex;
   flex-direction: row;

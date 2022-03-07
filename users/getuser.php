@@ -18,7 +18,15 @@ $sql = "select * FROM user where email = '$EM' and password = '$PAS'";
 $resultat = $kobling->query($sql);
 
 while ($rad = $resultat->fetch_assoc()) {
-    $EM = $rad["email"];
-    $PAS = $rad["password"];
+    $REM = $rad["email"];
+    $RPAS = $rad["password"];
+    echo "<p>$REM</p>";
+    echo "<p>$RPAS</p>";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === "POST") {
+    if (!isset($REM)) {
+        echo "Your e-mail or password is wrong.";
+    }
 }
 ?>

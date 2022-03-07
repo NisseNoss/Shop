@@ -15,8 +15,11 @@
     <button type="submit" id="signup-button">Login</button>
     <div id="login-status"></div>
 </form>
+
+
+
 <?php
- include "getuser.php";
+include "getuser.php";
 ?>
 
 

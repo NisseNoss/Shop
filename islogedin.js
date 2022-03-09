@@ -1,8 +1,13 @@
 
-const data = JSON.parse(localStorage['data']);
-
 if (localStorage.getItem('data')) {
-    document.getElementById('loginbtn').innerHTML = "loged in";
+    document.getElementById('loginbtn').innerHTML = "Loged in";
 } else {
-    document.getElementById('loginbtn').innerHTML = "log in";
+    document.getElementById('loginbtn').innerHTML = "Log in";
 }
+
+function getData() {
+    if (localStorage.getItem('data')) {
+        return JSON.parse(localStorage['data']);
+    }
+}
+const data = getData();

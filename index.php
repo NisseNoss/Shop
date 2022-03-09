@@ -15,7 +15,7 @@
             <a class="menubtn" href="#">Knapp</a>
         </div>
     </div>
-    <a id="loginbtn" class="loginbtn" href="/users/logon.php"></a>
+    <a id="loginbtn" class="loginbtn" href="/users/login/logon.php"></a>
 </header>
 <section id="cardsec">
     <?php

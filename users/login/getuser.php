@@ -40,4 +40,3 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         echo "Your e-mail or password is wrong.";
     }
 }
-?>

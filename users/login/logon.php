@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Signup page</h1>
-<form method="post" id="signin-area">
+<form method="post" id="signin-area" class="vertical">
     <label>
         <input class="input" name="email" id="email-input" placeholder="Email">
     </label>
@@ -16,13 +16,13 @@
     <div id="login-status"></div>
 </form>
 
-<p>Do you not have an account. <a href="/users/createuser.php">Click here!</a></p>
+<p>Do you not have an account. <a href="/users/create/createuser.php">Click here!</a></p>
 
 <?php
 include "getuser.php";
 ?>
 
-<script src="/users/login.js"></script>
+<script src="/users/login/login.js"></script>
 
 </body>
 </html>

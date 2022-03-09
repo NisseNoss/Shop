@@ -16,7 +16,7 @@
     <div id="login-status"></div>
 </form>
 
-
+<p>Do you not have an account. <a href="/users/createuser.php">Click here!</a></p>
 
 <?php
 include "getuser.php";

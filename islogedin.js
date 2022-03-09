@@ -1,5 +1,5 @@
 
-let data = JSON.parse(localStorage['data']);
+const data = JSON.parse(localStorage['data']);
 
 if (localStorage.getItem('data')) {
     document.getElementById('loginbtn').innerHTML = "loged in";

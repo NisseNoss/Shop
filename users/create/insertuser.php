@@ -13,9 +13,15 @@ $kobling->set_charset("utf8");
 $FN = $_POST["fname"];
 $LN = $_POST["lname"];
 $AD = $_POST["address"];
-$PNR = $_POST["postnr"];
+$PNR = $_POST["postalnr"];
 $NEM = $_POST["nemail"];
 $NPAS = $_POST["npassword"];
 
 $sql = "INSERT INTO user (firstname, lastname, adress, email, password, acess_level, post_place_postalnr)
-VALUES ('$FN', '$LN', '$AD', '$PNR', '$NEM', 0, '$NPAS')";
+VALUES ('$FN', '$LN', '$AD', '$NEM', '$NPAS', 0, '$PNR')";
+
+
+if($kobling->query($sql)) {
+    header("Location: ../../index.php");
+    exit();
+}

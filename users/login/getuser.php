@@ -1,5 +1,5 @@
 <?php
-
+// TODO Fix to work for the create thing
 // Tilkoblingiformasjon
 $tjener = "127.0.0.1";
 $brukernavn = "root";
@@ -33,6 +33,8 @@ while ($rad = $resultat->fetch_assoc()) {
     echo "<input id='REM' type='hidden' value='$REM'/>";
     echo "<input id='RPAS' type='hidden' value='$RPAS'/>";
     echo "<input id='RPN' type='hidden' value='$RPN'/>";
+
+    echo "<script>getValue()</script>";
 }
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {

@@ -18,14 +18,14 @@ function getValue() {
     }
 }
 
-getValue()
 
 form.addEventListener('submit', function (e){
     e.preventDefault();
 });
 
-localStorage["data"] = JSON.stringify(data);
-
+if (data < 0) {
+    localStorage["data"] = JSON.stringify(data);
+}
 console.log(data)
 
 

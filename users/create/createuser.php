@@ -27,7 +27,7 @@
             <input class="input marign" name="lname" id="lname-input" placeholder="Last name">
         </label>
         <label>
-            <input class="input marign" name="address" id="pass-inputc" placeholder="adress">
+            <input class="input marign" name="address" id="pass-inputc" placeholder="address">
         </label>
         <label>
             <input class="input marign" name="postalnr" id="pass-inputc" placeholder="Postal number">

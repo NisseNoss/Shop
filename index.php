@@ -10,16 +10,19 @@
             <img id="logo" src="" alt="Min logo">
         </a>
         <div id="menu">
-            <a class="menu-btn" href="#">Knapp</a>
-            <a class="menu-btn" href="#">Knapp</a>
-            <a class="menu-btn" href="#">Knapp</a>
+            <a class="menubtn" href="#">Knapp</a>
+            <a class="menubtn" href="#">Knapp</a>
+            <a class="menubtn" href="#">Knapp</a>
         </div>
     </div>
+    <a id="loginbtn" class="loginbtn" href="/users/logon.php"></a>
 </header>
 <section id="cardsec">
     <?php
         include "products/loadcard.php";
     ?>
 </section>
+<script src="/islogedin.js"></script>
 </body>
 </html>
+    

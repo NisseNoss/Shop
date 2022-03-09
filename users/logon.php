@@ -22,7 +22,7 @@
 include "getuser.php";
 ?>
 
-
+<script src="/users/login.js"></script>
 
 </body>
 </html>

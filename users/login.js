@@ -1,16 +1,9 @@
-let RUID;
-let RFN;
-let RLN;
-let RA;
-let REM;
-let RPAS;
-let RPN;
-const form = document.querySelector('form')
-let array;
+const form = document.getElementById('signup-button')
+let data;
 
 function getValue() {
     if (document.querySelector("#RUID").value !== null) {
-        array = [
+        data = [
             document.querySelector("#RUID").value,
             document.querySelector("#RFN").value,
             document.querySelector("#RLN").value,
@@ -21,7 +14,7 @@ function getValue() {
         ]
     }
     else {
-        array = []
+        data = []
     }
 }
 
@@ -29,8 +22,10 @@ getValue()
 
 form.addEventListener('submit', function (e){
     e.preventDefault();
+});
 
-    localStorage.setItem("data", JSON.stringify(array));
-})
+localStorage["data"] = JSON.stringify(data);
+
+console.log(data)
 
 

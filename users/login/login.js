@@ -13,7 +13,7 @@ function getValue() {
     ]
 }
 
-if (!localStorage.getItem('data')) {
+if (localStorage.getItem('data') === null) {
     getValue();
 }
 form.addEventListener('submit', function (e){

@@ -1,6 +1,7 @@
 
 if (localStorage.getItem('data')) {
     document.getElementById('loginbtn').innerHTML = "Loged in";
+    document.getElementById('loginbtn').href = "/";
 } else {
     document.getElementById('loginbtn').innerHTML = "Log in";
 }
@@ -10,4 +11,5 @@ function getData() {
         return JSON.parse(localStorage['data']);
     }
 }
+
 const data2 = getData();

@@ -27,30 +27,29 @@
             <input class="input margin" name="lname" id="lname-input" placeholder="Last name">
         </label>
         <label>
-            <input class="input margin" name="address" id="pass-inputc" placeholder="Address">
+            <input class="input margin" name="address" id="add-input" placeholder="Address">
         </label>
         <label>
-            <input class="input margin" name="postalnr" id="pass-inputc" placeholder="Postal number">
+            <input class="input margin" name="postalnr" id="postnr-input" placeholder="Postal number">
         </label>
         <label>
-            <input class="input margin" name="email" id="pass-inputf" placeholder="Email">
+            <input class="input margin" name="email" id="email-input" placeholder="Email">
         </label>
         <label>
-            <input class="input margin" name="password" id="pass-inputs" placeholder="Password" type="password">
+            <input class="input margin" name="password" id="pass-input" placeholder="Password" type="password">
         </label>
-        <button class="margin" type="submit" id="signup-button">Login</button>
+        <button class="margin" type="submit" id="signup-button">Create</button>
         <div id="login-status"></div>
     </form>
+
+
 </section>
 
 <?php
 include "insertuser.php";
-
-include "../login/getuser.php";
 ?>
 
 <script src="/islogedin.js"></script>
-<script src="/users/login/login.js"></script>
 
 </body>
 </html>

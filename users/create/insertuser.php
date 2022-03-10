@@ -20,8 +20,13 @@ $NPAS = $_POST["password"];
 $sql = "INSERT INTO user (firstname, lastname, adress, email, password, acess_level, post_place_postalnr)
 VALUES ('$FN', '$LN', '$AD', '$NEM', '$NPAS', 0, '$PNR')";
 
-
 if($kobling->query($sql)) {
-    header("Location: ../../index.php");
-    exit();
+    echo "Account was made successfully";
+    echo "<script>
+        let cData = ['$FN', '$LN', '$AD', '$PNR', '$NEM', '$NPAS']
+        localStorage['data'] = JSON.stringify(cData);
+        window.location.href = '/index.php';
+    </script>";
+} else {
+    echo "Noe gikk galt med spørringen $sql ($kobling->error).";
 }

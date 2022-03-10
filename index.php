@@ -6,7 +6,7 @@
 <body>
 <header>
     <div id="header">
-        <a href="">
+        <a href="index.php">
             <img id="logo" src="" alt="Min logo">
         </a>
         <div id="menu">

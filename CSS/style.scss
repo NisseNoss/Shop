@@ -9,7 +9,7 @@ $textcolorlight: #8e39ff;
 .horizontal{display:flex;flex-direction:row;justify-content:space-between;}
 .vertical{display:flex;flex-direction:column;justify-content:space-between;}
 .space-around{justify-content:space-around !important;}
-.center-text{text-align:center;align-items: center;}
+.center-text{text-align:center !important;align-items: center !important;}
 .margin{margin: 1rem 0 0 0}
 
 * {
@@ -134,6 +134,15 @@ header
       cursor: pointer;
     }
   }
+}
+
+#profile {
+  background-color: $white;
+  min-height: 45rem;
+  width: 80%;
+  margin: 4rem auto 0 auto;
+  border-radius: 1rem;
+
 }
 
 #createuser {

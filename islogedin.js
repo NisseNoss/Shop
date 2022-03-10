@@ -1,7 +1,7 @@
 
 if (localStorage.getItem('data')) {
     document.getElementById('loginbtn').innerHTML = "Loged in";
-    document.getElementById('loginbtn').href = "/";
+    document.getElementById('loginbtn').href = "/users/profile.php";
 } else {
     document.getElementById('loginbtn').innerHTML = "Log in";
 }

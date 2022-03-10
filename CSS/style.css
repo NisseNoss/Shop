@@ -23,8 +23,8 @@
 }
 
 .center-text {
-  text-align: center;
-  align-items: center;
+  text-align: center !important;
+  align-items: center !important;
 }
 
 .margin {
@@ -131,6 +131,14 @@ header {
   height: 3rem;
   border-radius: 6px;
   cursor: pointer;
+}
+
+#profile {
+  background-color: #ffffff;
+  min-height: 45rem;
+  width: 80%;
+  margin: 4rem auto 0 auto;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -33,10 +33,10 @@
             <input class="input margin" name="postalnr" id="pass-inputc" placeholder="Postal number">
         </label>
         <label>
-            <input class="input margin" name="nemail" id="pass-inputf" placeholder="Email">
+            <input class="input margin" name="email" id="pass-inputf" placeholder="Email">
         </label>
         <label>
-            <input class="input margin" name="npassword" id="pass-inputs" placeholder="Password" type="password">
+            <input class="input margin" name="password" id="pass-inputs" placeholder="Password" type="password">
         </label>
         <button class="margin" type="submit" id="signup-button">Login</button>
         <div id="login-status"></div>
@@ -46,10 +46,11 @@
 <?php
 include "insertuser.php";
 
-include "getuser.php";
+include "../login/getuser.php";
 ?>
 
 <script src="/islogedin.js"></script>
+<script src="/users/login/login.js"></script>
 
 </body>
 </html>

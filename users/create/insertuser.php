@@ -14,8 +14,8 @@ $FN = $_POST["fname"];
 $LN = $_POST["lname"];
 $AD = $_POST["address"];
 $PNR = $_POST["postalnr"];
-$NEM = $_POST["nemail"];
-$NPAS = $_POST["npassword"];
+$NEM = $_POST["email"];
+$NPAS = $_POST["password"];
 
 $sql = "INSERT INTO user (firstname, lastname, adress, email, password, acess_level, post_place_postalnr)
 VALUES ('$FN', '$LN', '$AD', '$NEM', '$NPAS', 0, '$PNR')";

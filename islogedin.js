@@ -10,4 +10,4 @@ function getData() {
         return JSON.parse(localStorage['data']);
     }
 }
-const data = getData();
+const data2 = getData();

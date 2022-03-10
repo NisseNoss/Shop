@@ -34,7 +34,7 @@ while ($rad = $resultat->fetch_assoc()) {
     echo "<input id='RPAS' type='hidden' value='$RPAS'/>";
     echo "<input id='RPN' type='hidden' value='$RPN'/>";
 
-    echo "<script>getValue()</script>";
+    //echo "<script>getValue()</script>";
 }
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {

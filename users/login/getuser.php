@@ -40,5 +40,7 @@ while ($rad = $resultat->fetch_assoc()) {
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     if (!isset($REM)) {
         echo "Your e-mail or password is wrong.";
+    } else {
+        echo "<script> window.location.href = '/index.php'; </script>";
     }
 }

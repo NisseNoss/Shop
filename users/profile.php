@@ -18,9 +18,10 @@
     <a id="loginbtn" class="loginbtn" href="/users/login/logon.php"></a>
 </header>
 
-<section id="profile" class="horizontal center-text">
+<section id="profile" class="horizontal space-around">
 
 </section>
 <script src="/islogedin.js"></script>
+<script src="/users/insertProfile.js"></script>
 </body>
 </html>

@@ -13,8 +13,9 @@
     $sql = "SELECT * FROM items";
 
     $resultat = $kobling->query($sql);
-
+    echo "<script>let items = [];</script>";
     while ($rad = $resultat->fetch_assoc()) {
+        $itemID = $rad['item_id'];
         $itemN = $rad['item_name'];
         $price = $rad['price'];
         $stock = $rad['stock'];
@@ -28,8 +29,18 @@
             echo "<p class='color'>$price kr</p>";
             echo "<p class='color'>$stock på lager</p>";
             echo "</div>";
-            echo "<button class='buy-button'></button>";
+            echo "<button class='buy-button' id='$itemID' onclick='addToCart($itemID,\"$itemN\",$price)'></button>";
             echo "</div>";
         echo "</div>";
+
+        echo
+        "<script>
+            items.push({
+            product: {id: $itemID, Name: '$itemN', cost: $price, amount: $stock}
+            })
+            localStorage['items'] = JSON.stringify(items);
+        </script>";
     }
+
+
 ?>

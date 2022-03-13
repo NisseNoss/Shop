@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         echo "Your e-mail or password is wrong.";
     } else {
         echo "<script> let data = [$RUID, '$RFN', '$RLN', '$RA', '$REM', '$RPAS', $RPN]
-        localStorage['data'] = JSON.stringify(data);  
+        localStorage['data'] = JSON.stringify(data);
         </script>";
         echo "<script> window.location.href = '/index.php'; </script>";
     }

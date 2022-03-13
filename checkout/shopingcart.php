@@ -17,13 +17,8 @@
     </div>
     <a id="loginbtn" class="loginbtn" href="/users/login/logon.php"></a>
 </header>
-<section id="cardsec">
-    <?php
-        include "products/loadcard.php";
-    ?>
+<section id="cartItems">
+    <div></div>
 </section>
-<script src="/islogedin.js"></script>
-<script src="/products/addToCart.js"></script>
 </body>
 </html>
-    

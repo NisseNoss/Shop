@@ -17,16 +17,25 @@ $PNR = $_POST["postalnr"];
 $NEM = $_POST["email"];
 $NPAS = $_POST["password"];
 
-$sql = "INSERT INTO user (firstname, lastname, adress, email, password, acess_level, post_place_postalnr)
+$sql2 = "INSERT INTO user (firstname, lastname, adress, email, password, acess_level, post_place_postalnr)
 VALUES ('$FN', '$LN', '$AD', '$NEM', '$NPAS', 0, '$PNR')";
 
-if($kobling->query($sql)) {
-    echo "Account was made successfully";
+$sql = "SELECT * FROM `user` WHERE email = '$NEM' and password = '$NPAS'";
+
+
+if($kobling->query($sql2)) {
+    $resultat = $kobling->query($sql);
+
+    while ($rad = $resultat->fetch_assoc()) {
+        $RUID = $rad["user_id"];
+    }
+    echo "Account was made successfully $sql2";
     echo "<script>
-        let cData = ['$FN', '$LN', '$AD', '$PNR', '$NEM', '$NPAS']
+        let cData = [$RUID, '$FN', '$LN', '$AD', '$PNR', '$NEM', '$NPAS']
         localStorage['data'] = JSON.stringify(cData);
-        window.location.href = '/index.php';
+        //window.location.href = '/index.php';
+        console.log('$RUID')
     </script>";
 } else {
-    echo "Noe gikk galt med spørringen $sql ($kobling->error).";
+    echo "Noe gikk galt med spørringen $sql2 ($kobling->error).";
 }

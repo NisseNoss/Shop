@@ -5,7 +5,7 @@ try {
     cart = JSON.parse(localStorage['cart']);
 } catch {}
 
-function addToCart(id, name, price) {
+function addToCart(id, name, price, img) {
 
     let saved = false;
 
@@ -20,7 +20,7 @@ function addToCart(id, name, price) {
 
     // Adds product to cart
     if (!saved) {
-        cart.push({product:{id: id, name: name}, quantity: 1})
+        cart.push({product:{id: id, name: name, price:price, img: img}, quantity: 1})
         totalPrice = totalPrice + price;
         localStorage['totalPrice'] = JSON.stringify(totalPrice);
     }

@@ -4,6 +4,8 @@ $iconcolor: #f0edff;
 $white: #ffffff;
 $textcolorlight: #8e39ff;
 
+
+.whiteBackground{background-color: $white;}
 .headercolor{color: $backgroundcolor;}
 .color{color: $textcolor;}
 .horizontal{display:flex;flex-direction:row;justify-content:space-between;}
@@ -11,6 +13,7 @@ $textcolorlight: #8e39ff;
 .space-around{justify-content:space-around !important;}
 .center-text{text-align:center !important;align-items: center !important;}
 .margin{margin: 1rem 0 0 0}
+.margin-auto{margin: auto;}
 
 * {
   box-sizing: border-box;
@@ -38,13 +41,43 @@ header
   width: 100%;
   max-width: fit-content;
   text-align: center;
-  padding: 1.5em 1em 1.5em 1em;
+  padding: 1.5rem 1rem .5rem 1rem;
   //margin: 10px 0 0 0;
   display: block;
   color: $textcolor;
   font-weight: bold;
   transition: .2s;
   margin-right: 10px;
+  &:hover
+  {
+    color: $textcolorlight;
+  }
+}
+
+#cartpagebtn
+{
+  width: 100%;
+  max-width: fit-content;
+  text-align: center;
+  padding: 1.5rem 1rem 0 1rem;
+  //margin: 10px 0 0 0;
+  display: block;
+  color: $textcolor;
+  font-weight: bold;
+  transition: .2s;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+
+  img
+  {
+    width: 2rem;
+    height: auto;
+  }
+
+  &:hover
+  {
+    color: $textcolorlight;
+  }
 }
 
 #header
@@ -53,7 +86,7 @@ header
   flex-direction: row;
   justify-content: space-between;
   //border-bottom: 1px solid black;
-  width: 90%;
+  width: 85%;
   margin: auto;
 
 }
@@ -145,6 +178,26 @@ header
 
 }
 
-#createuser {
+.cartCard
+{
+  border-radius: 6px;
+  width: 80%;
+  height: 15rem;
+  margin-top: 3rem;
 
+  img {
+    margin: 1rem 0 0 1.5rem;
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    //border: 1px solid black;
+    border-radius: 5px;
+  }
+}
+
+#button-container {
+  width: 80%;
+  height: 4rem;
+  border-radius: 5px;
+  margin-top: 1rem;
 }

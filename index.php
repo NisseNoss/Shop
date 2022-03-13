@@ -6,7 +6,7 @@
 <body>
 <header>
     <div id="header">
-        <a href="index.php">
+        <a href="/index.php">
             <img id="logo" src="" alt="Min logo">
         </a>
         <div id="menu">
@@ -15,6 +15,9 @@
             <a class="menubtn" href="#">Knapp</a>
         </div>
     </div>
+    <a id="cartpagebtn" href="/checkout/shopingcart.php">
+        <img src="/img/shopingcart.png" alt="Handlekurv">
+    </a>
     <a id="loginbtn" class="loginbtn" href="/users/login/logon.php"></a>
 </header>
 <section id="cardsec">

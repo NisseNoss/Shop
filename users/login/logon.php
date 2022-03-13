@@ -36,7 +36,7 @@
 include "getuser.php";
 ?>
 
-<script src="/users/login/login.js"></script>
+<!-- <script src="/users/login/login.js"></script> -->
 <script src="/islogedin.js"></script>
 </body>
 </html>

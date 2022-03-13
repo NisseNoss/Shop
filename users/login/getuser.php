@@ -24,22 +24,15 @@ while ($rad = $resultat->fetch_assoc()) {
     $REM = $rad["email"];
     $RPAS = $rad["password"];
     $RPN = $rad["post_place_postalnr"];
-
-    echo "<input id='RUID' type='hidden' value='$RUID'/>";
-    echo "<input id='RFN' type='hidden' value='$RFN'/>";
-    echo "<input id='RLN' type='hidden' value='$RLN'/>";
-    echo "<input id='RA' type='hidden' value='$RA'/>";
-    echo "<input id='REM' type='hidden' value='$REM'/>";
-    echo "<input id='RPAS' type='hidden' value='$RPAS'/>";
-    echo "<input id='RPN' type='hidden' value='$RPN'/>";
-
-    //echo "<script>getValue()</script>";
 }
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
-    if (!isset($REM)) {
+    if (!isset($REM) || !isset($RPAS)) {
         echo "Your e-mail or password is wrong.";
     } else {
+        echo "<script> let data = [$RUID, '$RFN', '$RLN', '$RA', '$REM', '$RPAS', $RPN]
+        localStorage['data'] = JSON.stringify(data);  
+        </script>";
         echo "<script> window.location.href = '/index.php'; </script>";
     }
 }

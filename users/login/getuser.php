@@ -1,5 +1,4 @@
 <?php
-// TODO Fix to work for the create thing
 // Tilkoblingiformasjon
 $tjener = "127.0.0.1";
 $brukernavn = "root";

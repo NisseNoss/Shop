@@ -11,4 +11,10 @@ function makeOrderTime() {
         localStorage["cart"] = JSON.stringify(cart);
         $("#f2").submit();
     }
+    else {
+        localStorage.removeItem('oid');
+        window.location.href = '/index.php'
+    }
 }
+
+makeOrderTime()

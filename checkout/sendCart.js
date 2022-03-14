@@ -12,6 +12,7 @@ function makeOrder() {
         $("#p1").val(totalPrice2);
         $("#p2").val(user[0]);
         $("#p3").val("send");
+        localStorage["totalPrice"] = []
         $("#f1").submit();
         console.log("hei")
     }

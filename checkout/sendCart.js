@@ -15,6 +15,8 @@ function makeOrder() {
         localStorage["totalPrice"] = []
         $("#f1").submit();
         console.log("hei")
+    } else {
+
     }
 }
 

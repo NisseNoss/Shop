@@ -29,7 +29,7 @@
             echo "<p class='color'>$price kr</p>";
             echo "<p class='color'>$stock på lager</p>";
             echo "</div>";
-            echo "<button class='buy-button' id='$itemID' onclick='addToCart($itemID,\"$itemN\",$price,\"$img\")'></button>";
+            echo "<button class='buy-button' id='$itemID' onclick='addToCart($itemID , \"$itemN\", $price , \"$img\")'></button>";
             echo "</div>";
         echo "</div>";
 

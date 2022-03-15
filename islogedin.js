@@ -12,4 +12,8 @@ function getData() {
     }
 }
 
+function logOut() {
+    localStorage.removeItem("data")
+}
+
 const data2 = getData();

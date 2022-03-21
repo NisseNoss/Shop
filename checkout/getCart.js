@@ -1,9 +1,10 @@
 let cart = JSON.parse(localStorage["cart"]);
 let totalPrice = JSON.parse(localStorage["totalPrice"]);
 
+// Viser alt som er i carten din på nettsiden
 for (const product of cart)
 {
-    let itemsPrice = product.quantity * product.product.price;
+    let itemsPrice = product.quantity * product.product.price; // kalulerer prisen til en type vare
     document.getElementById("cartItems").innerHTML +=`
 
         <div class="cartCard whiteBackground horizontal margin-auto">
@@ -26,4 +27,5 @@ for (const product of cart)
 
     ;
 }
-document.getElementById("totalPrice").innerHTML = "Total pris " + totalPrice.toFixed(2)
+// viser totalpris på nettsiden
+document.getElementById("totalPrice").innerHTML = "Total pris " + totalPrice.toFixed(2) // viser bare to desimaler

@@ -28,8 +28,8 @@ if ($value=="send") {
         echo "<script>
             let Data = [$OID]
             console.log(Data)
-            localStorage['oid'] = JSON.stringify(Data);
-            window.location.href = 'orderItems.php';
+            localStorage['oid'] = JSON.stringify(Data); // legger ordre ídeen
+            window.location.href = 'orderItems.php'; // sender oss til neste side
         </script>";
     }
 }

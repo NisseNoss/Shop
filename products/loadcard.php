@@ -10,6 +10,7 @@
 
     $kobling->set_charset("utf8");
 
+    // henter all data fra items tabellen i databasen
     $sql = "SELECT * FROM items";
 
     $resultat = $kobling->query($sql);
@@ -21,6 +22,7 @@
         $stock = $rad['stock'];
         $img = $rad['image'];
 
+        // lager cardsene i html
         echo "<div class='card'>";
             echo "<img src='$img' alt='Det er ingen bilde'>";
             echo "<div class='card-interface'>";
@@ -35,6 +37,7 @@
 
         echo
         "<script>
+            // legger alle items i localstorage
             items.push({
             product: {id: $itemID, Name: '$itemN', cost: $price, amount: $stock}
             })

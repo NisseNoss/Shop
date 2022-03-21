@@ -19,7 +19,7 @@
 </header>
 
 <section id="profile" class="horizontal space-around">
-    <button onclick="logOut()"></button>
+    <button onclick="logOut()">Logg ut</button>
 </section>
 <script src="/islogedin.js"></script>
 <script src="/users/insertProfile.js"></script>

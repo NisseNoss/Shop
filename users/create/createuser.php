@@ -19,6 +19,7 @@
 </header>
 
 <section id="createuser">
+    <!-- Sender input til php -->
     <form method="post" id="create-area" class="vertical center-text">
         <label>
             <input class="input margin" name="fname" id="fname-input" placeholder="First name">
